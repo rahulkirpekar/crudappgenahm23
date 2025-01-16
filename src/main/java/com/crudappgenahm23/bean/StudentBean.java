@@ -4,10 +4,10 @@ package com.crudappgenahm23.bean;
 // - Data Transporter
 public class StudentBean 
 {
-	private int rno     ;
-	private String name ;
-	private int std     ;
-	private int marks	;
+	private Integer rno     ;//null
+	private String name ;//null
+	private Integer std     ;//null
+	private Integer marks	;//null
 	
 	public StudentBean() {
 	}
@@ -18,10 +18,12 @@ public class StudentBean
 		this.marks = marks;
 	}
 
-	public int getRno() {
+	
+	
+	public Integer getRno() {
 		return rno;
 	}
-	public void setRno(int rno) {
+	public void setRno(Integer rno) {
 		this.rno = rno;
 	}
 	public String getName() {
@@ -30,16 +32,21 @@ public class StudentBean
 	public void setName(String name) {
 		this.name = name;
 	}
-	public int getStd() {
+	public Integer getStd() {
 		return std;
 	}
-	public void setStd(int std) {
+	public void setStd(Integer std) {
 		this.std = std;
 	}
-	public int getMarks() {
+	public Integer getMarks() {
 		return marks;
 	}
-	public void setMarks(int marks) {
+	public void setMarks(Integer marks) {
 		this.marks = marks;
+	}
+	@Override
+	public String toString() 
+	{
+		return rno +" " + name+" " + std+" " + marks;
 	}
 }

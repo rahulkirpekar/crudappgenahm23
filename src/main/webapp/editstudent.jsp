@@ -1,10 +1,12 @@
-<!DOCTYPE html>
+<?xml version="1.0" encoding="UTF-8" ?>
+
 <%@page import="com.crudappgenahm23.bean.StudentBean"%>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Registration Page</title>
+    <title>Edit Student Details</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -63,43 +65,31 @@
 </head>
 <body>
     <div class="container">
-    
-    <%
-    		if((session == null)  || (session.getAttribute("userName")==null))
-    		{
-    			response.sendRedirect("login.jsp");
-    		}
-    %>
-    
-    	<%
-    		StudentBean s = (StudentBean)request.getAttribute("sbean");
-    		String userName = (String)session.getAttribute("userName");
-    	%>
-        <h3>Student Registration Page</h3>
-        
-        
-        Welcome, <%=userName%>       
-        
-        <form action="insertStudentServlet" method="post">
+        <h3>Student Edit Registration Page</h3>
+        <% 
+            StudentBean s = (StudentBean)request.getAttribute("studentBean");
+        %>
+        <form action="updateStudentServlet" method="post">
             <table>
                 <tr>
+                    <td>Roll No</td>
+                    <td><input type="text" name="rno" value="<%=s.getRno()%>" readonly="readonly"/></td>
+                </tr>
+                <tr>
                     <td>Name</td>
-                    <td><input type="text" name="name" value="${sbean.name}" /></td>
-					<td>${nameErrMsg}</td>
+                    <td><input type="text" name="name" value="<%=s.getName()%>"/></td>
                 </tr>
                 <tr>
                     <td>Class</td>
-                    <td><input type="text" name="std" value="${sbean.std}" /></td>
-                    <td>${stdErrMsg}</td>
+                    <td><input type="text" name="std" value="<%=s.getStd()%>"/></td>
                 </tr>
                 <tr>
                     <td>Marks</td>
-                    <td><input type="text" name="marks" value="${sbean.marks}"  /></td>
-                    <td>${marksErrMsg}</td>
+                    <td><input type="text" name="marks" value="<%=s.getMarks()%>"/></td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td><input type="submit" value="Register"/></td>
+                    <td><input type="submit" value="Update"/></td>
                 </tr>
             </table>
         </form>
