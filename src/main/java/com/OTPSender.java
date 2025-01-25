@@ -1,20 +1,20 @@
+package com;
+
 import java.util.Properties;
 import java.util.Random;
 import java.util.Scanner;
-
 import javax.mail.*;
 import javax.mail.internet.*;
 
 public class OTPSender 
 {
-	
 	public  static void sendMail(String recipientEmail) 
 	{
 		// Recipient's email ID
 //        String recipientEmail  = recipientEmail;
         // Sender's email ID and password
         final String senderEmail = "rahul.kirpekar@gmail.com";
-        final String senderPassword = "miuh uuem uvhf rkda";
+        final String senderPassword = "";
 
         // Generate OTP
         String otp = generateOTP(6); // 6-digit OTP
@@ -28,9 +28,11 @@ public class OTPSender
         props.put("mail.smtp.host", "smtp.gmail.com");
         props.put("mail.smtp.port", "587");
 
-        Session session = Session.getInstance(props, new Authenticator() {
+        Session session = Session.getInstance(props, new Authenticator() 
+        {
             @Override
-            protected PasswordAuthentication getPasswordAuthentication() {
+            protected PasswordAuthentication getPasswordAuthentication() 
+            {
                 return new PasswordAuthentication(senderEmail, senderPassword);
             }
         });
