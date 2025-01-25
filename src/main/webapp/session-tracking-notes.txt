@@ -1,0 +1,24 @@
+Session Tracking:-
+-------------------
+
+1) Data Share---Database---table---data --insert---------X
+-----------------------------------------------------
+
+2) HttpSession------[Duration]
+		----------
+		    |
+<-------------------------------->		
+
+
+			productList
+			product view---Single /Multiple---TV 
+			product view---Single /Multiple---Mobile 
+			product view---Single /Multiple---Washing Machine 
+			add to cart--[TV, Mobile , WM , Cycle]--50K
+			buy---?--[26 Jan]---[Discount--10%]
+			
+	Amazon--login<-------------------------------------[Logout]	
+
+
+
+User-1--Login<--------------------------------------->logout

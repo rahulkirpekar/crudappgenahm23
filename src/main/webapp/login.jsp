@@ -5,7 +5,7 @@
 </head>
 <body>
 
-	<form action="loginServlet" method="post">
+	<form action="loginByCoockieServlet" method="post">
 	
 		<table>
 			<tr>

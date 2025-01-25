@@ -79,4 +79,34 @@
     <servlet-name>LogoutServlet</servlet-name>
     <url-pattern>/logoutServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LoginByCoockieServlet</display-name>
+    <servlet-name>LoginByCoockieServlet</servlet-name>
+    <servlet-class>com.crudappgenahm23.controller.LoginByCoockieServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginByCoockieServlet</servlet-name>
+    <url-pattern>/loginByCoockieServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>GetAllCookiesServlet</display-name>
+    <servlet-name>GetAllCookiesServlet</servlet-name>
+    <servlet-class>com.crudappgenahm23.controller.GetAllCookiesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetAllCookiesServlet</servlet-name>
+    <url-pattern>/GetAllCookiesServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>InvalidateUserByCookieServlet</display-name>
+    <servlet-name>InvalidateUserByCookieServlet</servlet-name>
+    <servlet-class>com.crudappgenahm23.controller.InvalidateUserByCookieServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InvalidateUserByCookieServlet</servlet-name>
+    <url-pattern>/InvalidateUserByCookieServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
