@@ -1,0 +1,46 @@
+Listener:-
+----------
+
+	Event
+		Action---code execute
+
+Scope
+-----
+	LifeCycle Event
+	---------------
+		1) request
+			ServletRequestListener	
+				1) requestInitialized()
+				2) requestDestroyed()
+			
+		2) session
+			HttpSessionListener
+				1) sessionCreated()
+				2) sessionDestroyed()	
+
+		3) context
+			ServletContextListener
+Attributes Listener:-
+----------------------
+ServletRequestAttributeListener
+*********************************
+	1) request---data---store
+		
+		1) data---request---added---attributeAdded()
+		2) data---request---update--attributeReplaced()
+		2) data---request---remove/delete--attributeRemoved()
+	
+	2) session---data---store--[HttpSessionAttributeListener]
+		
+		
+		1) data---session---added---attributeAdded()
+		2) data---session---update---attributeReplaced()
+		2) data---session---remove/delete---attributeRemoved()
+		
+	3) context---data---store--[ServletContextAttributeListener]
+
+		1) data---context---added
+		2) data---context---update
+		2) data---context---remove/delete
+
+

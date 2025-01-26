@@ -9,6 +9,15 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
+  <listener>
+    <listener-class>com.crudappgenahm23.listener.MyServletRequestListener</listener-class>
+  </listener>
+  <listener>
+    <listener-class>com.crudappgenahm23.listener.MyHttpSessionListener</listener-class>
+  </listener>
+  <listener>
+    <listener-class>com.crudappgenahm23.listener.MyServletContextListener</listener-class>
+  </listener>
   <servlet>
     <description></description>
     <display-name>InsertStudentServlet</display-name>
@@ -109,4 +118,43 @@
     <servlet-name>InvalidateUserByCookieServlet</servlet-name>
     <url-pattern>/InvalidateUserByCookieServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>FirstServlet</display-name>
+    <servlet-name>FirstServlet</servlet-name>
+    <servlet-class>com.crudappgenahm23.controller.FirstServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FirstServlet</servlet-name>
+    <url-pattern>/FirstServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>MyServletRequestAttributeListener</display-name>
+    <servlet-name>MyServletRequestAttributeListener</servlet-name>
+    <servlet-class>com.crudappgenahm23.listener.MyServletRequestAttributeListener</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MyServletRequestAttributeListener</servlet-name>
+    <url-pattern>/MyServletRequestAttributeListener</url-pattern>
+  </servlet-mapping>
+  <listener>
+    <listener-class>com.crudappgenahm23.listener.MyServletRequestAttributeListener</listener-class>
+  </listener>
+  <servlet>
+    <description></description>
+    <display-name>SecondServlet</display-name>
+    <servlet-name>SecondServlet</servlet-name>
+    <servlet-class>com.crudappgenahm23.controller.SecondServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SecondServlet</servlet-name>
+    <url-pattern>/SecondServlet</url-pattern>
+  </servlet-mapping>
+  <listener>
+    <listener-class>com.crudappgenahm23.listener.MyHttpSessionAttributeListener</listener-class>
+  </listener>
+  <listener>
+    <listener-class>com.crudappgenahm23.listener.MyServletContextAttributeListener</listener-class>
+  </listener>
 </web-app>

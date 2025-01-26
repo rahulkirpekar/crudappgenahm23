@@ -14,7 +14,7 @@ public class OTPSender
 //        String recipientEmail  = recipientEmail;
         // Sender's email ID and password
         final String senderEmail = "rahul.kirpekar@gmail.com";
-        final String senderPassword = "";
+        final String senderPassword = "miuh uuem uvhf rkda";
 
         // Generate OTP
         String otp = generateOTP(6); // 6-digit OTP

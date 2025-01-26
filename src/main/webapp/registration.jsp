@@ -64,13 +64,7 @@
 <body>
     <div class="container">
     
-<%--     <% --%>
-//     		if((session == null)  || (session.getAttribute("userName")==null))
-//     		{
-//     			response.sendRedirect("login.jsp");
-//     		}
-<%--     %> --%>
-    
+   
     	<%
     		StudentBean s = (StudentBean)request.getAttribute("sbean");
     		String userName = (String)session.getAttribute("userName");

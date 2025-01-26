@@ -28,16 +28,16 @@ public class LoginServlet extends HttpServlet
 		if (   ((userName!=null)  && (userName.trim().length()>0))  && ((password!=null)  && (password.trim().length()>0))   ) 
 		{
 			
-			UserDao userDao = new UserDao();
+//			UserDao userDao = new UserDao();
 			
 			
-			UserBean userBean = userDao.getUserByName(userName);
-			
-			if( (userBean!=null) && (userBean.getPassword().equals(password))) 
-			{
-				
-			}
-			
+//			UserBean userBean = userDao.getUserByName(userName);
+//			
+//			if( (userBean!=null) && (userBean.getPassword().equals(password))) 
+//			{
+//				
+//			}
+//			
 			
 			if(("admin".equals(userName))  && ("admin@123".equals(password))) 
 			{
