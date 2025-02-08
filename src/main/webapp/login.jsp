@@ -4,7 +4,7 @@
 <title>Login Page</title>
 </head>
 <body>
-
+	<jsp:include page="header.jsp" />  
 	<form action="loginByCoockieServlet" method="post">
 	
 		<table>
@@ -22,5 +22,6 @@
 			</tr>
 		</table>
 	</form>
+		<jsp:include page="footer.jsp" /> 
 </body>
 </html>

@@ -157,4 +157,13 @@
   <listener>
     <listener-class>com.crudappgenahm23.listener.MyServletContextAttributeListener</listener-class>
   </listener>
+  <filter>
+    <display-name>TestFilter</display-name>
+    <filter-name>TestFilter</filter-name>
+    <filter-class>com.crudappgenahm23.filter.TestFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>TestFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
 </web-app>

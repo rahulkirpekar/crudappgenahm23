@@ -12,5 +12,7 @@
 	<classpathentry exported="true" kind="lib" path="src/main/webapp/WEB-INF/lib/servlet-api.jar"/>
 	<classpathentry exported="true" kind="lib" path="src/main/webapp/activation-1.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="src/main/webapp/mail-1.4.7.jar"/>
+	<classpathentry exported="true" kind="lib" path="src/main/webapp/WEB-INF/lib/jakarta.servlet.jsp.jstl-2.0.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="src/main/webapp/WEB-INF/lib/jakarta.servlet.jsp.jstl-api-2.0.0.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

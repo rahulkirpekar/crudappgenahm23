@@ -22,3 +22,43 @@ Session Tracking:-
 
 
 User-1--Login<--------------------------------------->logout
+
+
+
+
+include action(Dynamic page call):-
+------------------------------------
+
+				header.jsp---time
+				
+home.jsp				
+				<jsp:include page="header.jsp" />  
+				home.jsp / addtocart.jsp
+				<jsp:include page="footer.jsp" />  
+				
+				
+
+				footer.jsp--Visiting Counter
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

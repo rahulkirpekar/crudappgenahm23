@@ -15,9 +15,9 @@ public class FirstServlet extends HttpServlet
 	{
 		System.out.println("FirstServlet---doGet()");
 		
-		request.setAttribute("test1", "Tested Request Attributed");
+//		request.setAttribute("test1", "Tested Request Attributed");
 		
-		request.getRequestDispatcher("SecondServlet").forward(request, response);
+//		request.getRequestDispatcher("SecondServlet").forward(request, response);
 	}
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
 	{

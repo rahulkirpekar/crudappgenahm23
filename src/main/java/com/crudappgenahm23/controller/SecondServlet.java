@@ -15,13 +15,13 @@ public class SecondServlet extends HttpServlet
 	{
 		System.out.println("SecondServlet--doGet()");
 		
-		String value = (String)request.getAttribute("test1");
+//		String value = (String)request.getAttribute("test1");
 		
-		System.out.println("SecondServlet---Value : " + value);
+//		System.out.println("SecondServlet---Value : " + value);
 		
-		request.removeAttribute("test1");
+//		request.removeAttribute("test1");
 		
-		System.out.println("SecondSerlvet---test1---removed from request");
+//		System.out.println("SecondSerlvet---test1---removed from request");
 	}
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
 	{
